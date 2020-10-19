@@ -6,7 +6,7 @@ let controller = new AbortController();
 
 const useSearch = () => {
     const [data, setData] = useState([]);
-    const [page, setPage] = useState(1);
+    const [curPage, setPage] = useState(1);
     const [isLoading, setLoading] = useState(false);
 
 
@@ -17,7 +17,7 @@ const useSearch = () => {
         const history = getHistory();
         if (history[searchField] && history[searchField][page]) {
             setData(history[searchField][page])
-            return
+            return;
         }
 
         try {
@@ -49,7 +49,7 @@ const useSearch = () => {
     }
 
     return {
-        onSearch, onStop, data, page, isLoading
+        onSearch, onStop, data, page: curPage, isLoading, setLoading
     }
 }
 

@@ -3,9 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
     "abortcontroller-polyfill": "^1.5.0",
     "node-sass": "^4.14.1",
     "react": "^16.14.0",
@@ -34,6 +31,11 @@
     ]
   },
   "devDependencies": {
-    "babel-plugin-react-scoped-css": "^1.1.0"
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@testing-library/react-hooks": "^3.4.2",
+    "babel-plugin-react-scoped-css": "^1.1.0",
+    "react-test-renderer": "^16.14.0"
   }
 }
