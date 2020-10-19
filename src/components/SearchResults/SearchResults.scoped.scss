@@ -1,0 +1,34 @@
+.search-results {
+  font-family: sans-serif;
+
+  .placeholder{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+  }
+
+  .repo {
+    padding: 10px;
+    display: block;
+    border-bottom: 1px solid #eee;
+
+    h3 {
+      margin-bottom: 10px;
+
+      a {
+        text-decoration: none;
+
+        &:not(:visited) {
+          color: #0366d6;
+
+        }
+      }
+    }
+    .description{
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

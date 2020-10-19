@@ -1,10 +1,10 @@
 import React from 'react';
 import './SearchBar.scoped.scss';
 
-function SearchBar() {
+function SearchBar(props) {
     return (
         <div className="search-bar">
-            <input className="input"></input>
+            <input className="input" {...props}/>
         </div>
     );
 }

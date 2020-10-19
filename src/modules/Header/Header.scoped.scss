@@ -3,6 +3,21 @@
   padding: 0 10px;
   background: #24292e;
   display: flex;
-  //justify-content: center;
   align-items: center;
+
+  .left{
+    display: flex;
+    font-family: sans-serif;
+    flex: 1;
+    user-select: none;
+    justify-content: flex-end;
+
+    .page{
+      cursor: default;
+      padding: 5px 10px;
+      justify-content: center;
+      color: white;
+
+    }
+  }
 }
